@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+    <title>AI Image Generator</title>
+</head>
+
+<body>
+    <section class="image-generator">
+        <div class="content">
+            <h1>AI Image Generator Tool</h1>
+            <p>Convert your text into an image within a second using this JavaScript powered AI Image Generator.</p>
+            <form class="generate-form" aria-label="Image Generation Form">
+                <div class="form-group">
+                    <label for="prompt">Enter your prompt:</label>
+                    <input type="text" id="prompt" required placeholder="Describe what you want to generate" />
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Select number of images:</label>
+                    <select id="quantity" aria-label="Select number of images">
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Images</option>
+                        <option value="3">3 Images</option>
+                        <option value="4">4 Images</option>
+                    </select>
+                </div>
+                <button type="submit" class="generate-btn">Generate</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="image-gallery">
+        <div class="img-card">
+            <img decoding="async" src="images/img-1.jpg" alt="Generated Image 1" />
+            <a href="images/img-1.jpg" class="download-btn" download aria-label="Download Image 1">
+                <img decoding="async" src="images/download.svg" alt="Download Icon" />
+            </a>
+        </div>
+        <div class="img-card">
+            <img decoding="async" src="images/img-2.jpg" alt="Generated Image 2" />
+            <a href="images/img-2.jpg" class="download-btn" download aria-label="Download Image 2">
+                <img decoding="async" src="images/download.svg" alt="Download Icon" />
+            </a>
+        </div>
+        <div class="img-card">
+            <img decoding="async" src="images/img-3.jpg" alt="Generated Image 3" />
+            <a href="images/img-3.jpg" class="download-btn" download aria-label="Download Image 3">
+                <img decoding="async" src="images/download.svg" alt="Download Icon" />
+            </a>
+        </div>
+        <div class="img-card">
+            <img decoding="async" src="images/img-4.jpg" alt="Generated Image 4" />
+            <a href="images/img-4.jpg" class="download-btn" download aria-label="Download Image 4">
+                <img decoding="async" src="images/download.svg" alt="Download Icon" />
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
